@@ -4,10 +4,6 @@ using Microsoft.Extensions.Logging;
 
 namespace GettingStarted
 {
-    public class Message
-    {
-        public string Text { get; set; }
-    }
 
     public class MessageConsumer :
         IConsumer<Message>
