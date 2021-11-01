@@ -19,7 +19,8 @@ namespace GettingStarted
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                await _bus.Publish(new Message {Text = $"The time is {DateTimeOffset.Now}"});
+                await _bus.Publish(new Message { Text = $"The time is {DateTimeOffset.Now}" });
+                await _bus.Publish(new MessageType2 {Text = $"Mensagem tipo 2", Author = "Eu"});
 
                 await Task.Delay(1000, stoppingToken);
             }
