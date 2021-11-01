@@ -20,6 +20,6 @@ namespace GettingStarted
             _logger.LogInformation("Received Text: {Text}", context.Message.Text);
 
             return Task.CompletedTask;
-        }
+        }        
     }
 }
